@@ -1,26 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Paypal from './Paypal'
 class App extends Component {
+
   render() {
+    // sólo para los usuarios que no tengan premium
+    // mantener ese valor en props o state
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Paypal userdId="0"/>
     );
   }
 }
